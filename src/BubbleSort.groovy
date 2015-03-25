@@ -11,9 +11,10 @@ class BubbleSort extends SortMethod{
     def sortM(Object items) {
         def comp = 0
         def mov = 0
-        def len = items.size()
-        def ini = System.currentTimeMillis()
         def aux
+        def len = items.size()
+        //Se cuenta desde el inicio del algoritmo
+        def ini = System.currentTimeMillis()
         for(i in 0..len-2){
             for (j in 0..len-2-i){
                 if(items[j]>items[j+1]){
@@ -25,9 +26,12 @@ class BubbleSort extends SortMethod{
                 mov+=3
             }
         }
+        //hasta el fin del algoritmo
         def fin= System.currentTimeMillis()
+        //Se añaden las comparaciones, movimientos y tiempo
+        //final de ejecucion al reporte
         this.report.addComparisons(comp)
         this.report.addMovements(mov)
-        this.report.time = fin-ini
+        this.report.setTime(fin-ini)
     }
 }

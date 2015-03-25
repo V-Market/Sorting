@@ -9,5 +9,14 @@ abstract class SortMethod {
         this.sortName=sortName
         this.report = new Report(instanceSize)
     }
+
+    //toString con el nombre del ordenamiento
+    //mas su respectivo reporte
+    String toString(){
+        return  ("-------------------\n"
+                + "* "+sortName
+                + "\n-------------------\n"
+                + report.toString())
+    }
     abstract sortM(items)
 }

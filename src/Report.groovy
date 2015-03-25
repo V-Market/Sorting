@@ -2,30 +2,35 @@
  * Created by Gabriel on 24/03/2015.
  */
 class Report {
-    long instanceSize
-    long comparisons
-    long movements
-    double time
+    private long instanceSize
+    private long comparisons
+    private long movements
+    private double time
 
     public Report(long instanceSize){
-        this.instanceSize=instanceSize
-        this.comparisons=0
-        this.movements=0
-        this.time=0.0
+        this.instanceSize=instanceSize  //Tamaño de la lista
+        this.comparisons=0              //Numero de comparaciones hechas
+        this.movements=0                //Numero de movimientos hechos
+        this.time=0.0                   //Tiempo de ejecucion
     }
 
+    //Metodo para añadir comparaciones al reporte
     void addComparisons (long k){
         this.comparisons+=k
     }
+    //Metodo para añadir movimientos al reporte
     void addMovements(long k){
         this.movements+=k
     }
-
-    String toString(){
-        println "Instance Size: " + instanceSize
-        println "Comparisons: " + comparisons
-        println "Movements: "+ movements
-        println "Time: "+movements
+    //Metodo para colocar el tiempo de ejecucion total
+    void setTime(double time){
+        this.time = time
     }
-
+    //toString para la impresion del reporte
+    String toString(){
+        return ("Instance Size: " + instanceSize
+        + "\nComparisons: " + comparisons
+        + "\nMovements: "+ movements
+        + "\nTime: "+movements)
+    }
 }
