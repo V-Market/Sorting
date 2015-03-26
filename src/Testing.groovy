@@ -10,8 +10,8 @@ assertSame x, x
 class TestingSortMethod extends GroovyTestCase {
 
     void testQuickSort(int[] array) {
-        def qs
-        assertTrue(QuickSort.sortM(array).equals(array.sort(false) { it }))
+        def qs = new QuickSort()
+        assertTrue(qs.sortM(array).equals(array.sort(false) { it }))
     }
 
     void testMergeSort(int[] array) {
