@@ -2,6 +2,7 @@
  * Created by Gabriel on 24/03/2015.
  */
 
+import java.util.Arrays;
 import java.util.Random;
 
 class Runner {
@@ -35,15 +36,23 @@ class Runner {
 
     public static void main(String[] args) {
         int number = 10;
+        int [] list;
         Runner runner = new Runner(number);
         System.out.println( "ARREGLO INICIAL : ");
-        System.out.println(runner.items);
+        System.out.println(Arrays.toString(runner.items));
         //------------------------------/
         //BUBBLE SORT
-        runner.bs.sortM(runner.items);
+        list = runner.bs.sortM(runner.items);
         System.out.println(runner.bs.toString());
         //QUICKSORT
-        //runner.qs.sortM(runner.items);
-        //System.out.println(runner.qs.toString());
+        list = runner.qs.sortM(runner.items);
+        System.out.println(runner.qs.toString());
+        //MERGESORT
+        list = runner.ms.sortM(runner.items);
+        System.out.println(runner.ms.toString());
+        //HEAPSORT
+        list = runner.hs.sortM(runner.items);
+        System.out.println(runner.hs.toString());
+        System.out.println(Arrays.toString(list));
     }
 }
