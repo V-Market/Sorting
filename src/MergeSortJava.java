@@ -20,8 +20,8 @@ public class MergeSortJava extends SortMethod{
                 arr1[i] = array[i];
             for(int i = elementsInA1; i < elementsInA1 + elementsInA2; i++)
                 arr2[i - elementsInA1] = array[i];
-            arr1 = mergeSort(arr1);
-            arr2 = mergeSort(arr2);
+            arr1 = sortM(arr1);
+            arr2 = sortM(arr2);
 
             int i = 0, j = 0, k = 0;
             while(arr1.length != j && arr2.length != k)
