@@ -36,6 +36,7 @@ public class MergeSortJava extends SortMethod{
                     i++;
                     k++;
                     mov++;
+                    comp++;
                 }
             }
             while (arr1.length != j) {
@@ -56,9 +57,9 @@ public class MergeSortJava extends SortMethod{
     @Override
     public int[] sortM(int[] array){
         int []list = new int[array.length];
-        double ini = System.currentTimeMillis();
-        list = mergeSort(list);
-        double fin = System.currentTimeMillis();
+        double  ini = System.currentTimeMillis();
+        list = mergeSort(array);
+        double  fin = System.currentTimeMillis();
         super.report.addComparisons(comp);
         super.report.addMovements(mov);
         super.report.setTime(fin-ini);
