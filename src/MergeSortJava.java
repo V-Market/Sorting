@@ -3,14 +3,27 @@
  */
 public class MergeSortJava extends SortMethod{
 
+    int comp;
+    int mov;
+
     MergeSortJava(String sortName, long instanceSize) {
         super(sortName, instanceSize);
     }
-    int mov;
-    int comp;
-    public int[] mergeSort(int[] array) {
-        mov = 0;
+
+    @Override
+    public int[] sortM(int[] array){
         comp = 0;
+        mov = 0;
+        long ini = System.currentTimeMillis();
+        array = mergeSort(array);
+        long fin = System.currentTimeMillis();
+        super.report.addComparisons(comp);
+        super.report.addMovements(mov);
+        super.report.setTime(fin-ini);
+        return array;
+    }
+
+    public int[] mergeSort(int[] array) {
         if (array.length > 1) {
             int elementsInA1 = array.length / 2;
             int elementsInA2 = array.length - elementsInA1;
@@ -20,24 +33,23 @@ public class MergeSortJava extends SortMethod{
                 arr1[i] = array[i];
             for (int i = elementsInA1; i < elementsInA1 + elementsInA2; i++)
                 arr2[i - elementsInA1] = array[i];
-            arr1 = sortM(arr1);
-            arr2 = sortM(arr2);
+            arr1 = mergeSort(arr1);
+            arr2 = mergeSort(arr2);
 
+            //Merge
             int i = 0, j = 0, k = 0;
             while (arr1.length != j && arr2.length != k) {
                 if (arr1[j] < arr2[k]) {
                     array[i] = arr1[j];
                     i++;
                     j++;
-                    comp++;
-                    mov++;
                 } else {
                     array[i] = arr2[k];
                     i++;
                     k++;
-                    mov++;
-                    comp++;
                 }
+                mov++;
+                comp++;
             }
             while (arr1.length != j) {
                 array[i] = arr1[j];
@@ -53,16 +65,5 @@ public class MergeSortJava extends SortMethod{
             }
         }
         return array;
-    }
-    @Override
-    public int[] sortM(int[] array){
-        int []list = new int[array.length];
-        double  ini = System.currentTimeMillis();
-        list = mergeSort(array);
-        double  fin = System.currentTimeMillis();
-        super.report.addComparisons(comp);
-        super.report.addMovements(mov);
-        super.report.setTime(fin-ini);
-        return list;
     }
 }

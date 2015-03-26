@@ -45,24 +45,25 @@ class Runner {
         list = runner.bs.sortM(runner.items);
         System.out.println(runner.bs.toString());
         System.out.println(Arrays.toString(list));
-        //QUICKSORT
-        list = runner.qs.sortM(runner.items);
-        System.out.println(runner.qs.toString());
-        System.out.println(Arrays.toString(list));
-        //MERGESORT
-        list = runner.ms.sortM(runner.items);
-        System.out.println(runner.ms.toString());
-        //MERGESORT JAVA
-        list = runner.msj.sortM(runner.items);
-        System.out.println(runner.msj.toString());
-        System.out.println(Arrays.toString(list));
         //HEAPSORT
         list = runner.hs.sortM(runner.items);
         System.out.println(runner.hs.toString());
         System.out.println(Arrays.toString(list));
-        //JAVA QUICKSORT
+        //QUICKSORT
+        list = runner.qs.sortM(runner.items);
+        System.out.println(runner.qs.toString());
+        System.out.println(Arrays.toString(list));
+        //QUICKSORT JAVA
         list = runner.qsj.sortM(runner.items);
         System.out.println(runner.qsj.toString());
+        System.out.println(Arrays.toString(list));
+        //MERGESORT
+        list = runner.ms.sortM(runner.items);
+        System.out.println(runner.ms.toString());
+        System.out.println(Arrays.toString(list));
+        //MERGESORT JAVA
+        list = runner.msj.sortM(runner.items);
+        System.out.println(runner.msj.toString());
         System.out.println(Arrays.toString(list));
     }
 }

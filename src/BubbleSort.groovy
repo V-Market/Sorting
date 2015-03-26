@@ -1,3 +1,5 @@
+import org.junit.rules.Stopwatch
+
 /**
  * Created by Gabriel on 24/03/2015.
  */
@@ -22,16 +24,16 @@ class BubbleSort extends SortMethod{
                     aux= list[j + 1]
                     list[j + 1] =list[j]
                     list[j]=aux
+                    mov += 1
                 }
                 comp+=1
-                mov+=3
             }
         }
         //hasta el fin del algoritmo
         def fin= System.currentTimeMillis()
-
         super.report.addComparisons(comp)
         super.report.addMovements(mov)
         super.report.setTime(fin-ini)
+        return list
     }
 }

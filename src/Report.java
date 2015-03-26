@@ -22,8 +22,8 @@ class Report {
     void addMovements(long k){
         this.movements+=k;
     }
-    //Metodo para colocar el tiempo de ejecucion total
-    void setTime(double time){
+    //Metodo para colocar el tiempo de ejecucion
+    void setTime(double time) {
         this.time = time;
     }
 
@@ -33,6 +33,6 @@ class Report {
         return ("Instance Size: " + instanceSize
         + "\nComparisons: " + comparisons
         + "\nMovements: "+ movements
-        + "\nTime: "+movements);
+        + "\nTime: "+time);
     }
 }

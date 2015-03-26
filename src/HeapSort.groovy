@@ -3,6 +3,9 @@
  */
 class HeapSort extends SortMethod{
 
+    def comp = 0
+    def mov = 0
+
     HeapSort(String sortName, long instanceSize) {
         super(sortName, instanceSize)
     }
@@ -11,12 +14,19 @@ class HeapSort extends SortMethod{
     int[] sortM(int[] items) {
         def list = []
         list = new ArrayList( Arrays.asList(items) )
+        def ini = System.currentTimeMillis()
         list = heapSort(list)
+        def fin = System.currentTimeMillis()
+        super.report.addComparisons(comp)
+        super.report.addMovements(mov)
+        super.report.setTime(fin-ini)
+        return list
     }
 
     def heapSort(list) {
         def size = list.size()
 
+        comp++
         if (size < 2) {
             return list
         }
@@ -25,7 +35,6 @@ class HeapSort extends SortMethod{
 
         /*Remove the biggest element in the heap and make sure heap still is valid*/
         (size - 1 .. 1).each {
-            println list
             /*Remove the biggest element*/
             swap(list, 0, it)
             /*Sift down to make a valid heap*/
@@ -56,14 +65,17 @@ class HeapSort extends SortMethod{
             /*Assume parent is the biggest value*/
             def max = parent
             /*If left child is bigger than parent then left child is a candidate to move up*/
+            comp++
             if (list[leftChild] > list[max]) {
                 max = leftChild
             }
             /*If right child is exist its the bigges amoung parent, left and right, then right child needs to move up*/
+            comp++
             if (rightChild <= end && list[rightChild] > list[max]) {
                 max = rightChild
             }
             /*If the parent is not the biggest one, swap it with biggest child and continue*/
+            comp++
             if (max != parent) {
                 swap(list, parent, max)
                 parent = max
@@ -77,5 +89,6 @@ class HeapSort extends SortMethod{
         def temp = list[i]
         list[i]  = list[j]
         list[j]  = temp
+        mov+=1
     }
 }

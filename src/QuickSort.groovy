@@ -3,13 +3,12 @@
  */
 class QuickSort extends SortMethod{
 
+    def comp = 0
+    def mov = 0
+
     QuickSort(String sortName, long instanceSize) {
         super(sortName, instanceSize)
     }
-    def comp = 0
-    def mov = 0
-    //se pueden definir como variables globales pero no entiendo
-    // donde deberia contar 1 movimiento o una comparacion :v
 
     @Override
     int[] sortM(int[] items) {
@@ -21,11 +20,18 @@ class QuickSort extends SortMethod{
         super.report.addComparisons(comp)
         super.report.addMovements(mov)
         super.report.setTime(fin-ini)
+        return list
     }
 
     def quickSort(items){
-        if (!items || items.size() <= 1) return items
+        if (!items || items.size() <= 1) {
+            comp+=1
+            return items
+        }
         def (less, more) = items[1..-1].split { it <= items[0] }
+        def size = items.size()
+        comp+=size
+        mov+=size-1
         quickSort(less) + items[0] + quickSort(more)
     }
 }

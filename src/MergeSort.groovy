@@ -3,6 +3,9 @@
  */
 class MergeSort extends SortMethod {
 
+    def comp = 0
+    def mov = 0
+
     MergeSort(String sortName, long instanceSize) {
         super(sortName, instanceSize)
     }
@@ -11,10 +14,18 @@ class MergeSort extends SortMethod {
     int[] sortM(int[] items) {
         def list = []
         list = new ArrayList( Arrays.asList(items) )
+
+        def ini = System.currentTimeMillis()
         list = mergeSort(list)
+        def fin = System.currentTimeMillis()
+        super.report.addComparisons(comp)
+        super.report.addMovements(mov)
+        super.report.setTime(fin-ini)
+        return list
     }
 
     def mergeSort(def list){
+        comp += 1
         if (list.size() <= 1)return list
         def center = list.size() / 2 -1
         def left  = list[0..center]
@@ -31,9 +42,11 @@ class MergeSort extends SortMethod {
             } else {
                 sorted << right.remove(0)
             }
+            comp+=1
+            mov+=1
         }
         sorted = sorted + left + right
+        mov+=left.size()+right.size()
         return sorted
     }
 }
-
