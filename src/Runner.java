@@ -52,6 +52,9 @@ class Runner {
         //MERGESORT
         list = runner.ms.sortM(runner.items);
         System.out.println(runner.ms.toString());
+        //MERGESORT JAVA
+        list = runner.msj.sortM(runner.items);
+        System.out.println(runner.msj.toString());
         System.out.println(Arrays.toString(list));
         //HEAPSORT
         list = runner.hs.sortM(runner.items);

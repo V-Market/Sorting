@@ -10,18 +10,20 @@ public class QuickSortJava extends SortMethod {
     }
     int comp;
     int mov;
+
     @Override
     public int[] sortM(int[] items) {
         comp = 0;
         mov = 0;
         long ini = System.currentTimeMillis();
-        items = quickSort(items, 0, items.length);
+        items = quickSort(items, 0, items.length-1);
         long fin = System.currentTimeMillis();
         super.report.addComparisons(comp);
         super.report.addMovements(mov);
         super.report.setTime(fin-ini);
         return items;
     }
+
     private int[] quickSort(int[] array, int izq, int der ){
         int pivote=array[izq]; // tomamos primer elemento como pivote
         int i=izq; // i realiza la búsqueda de izquierda a derecha

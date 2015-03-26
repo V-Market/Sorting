@@ -6,11 +6,11 @@ class QuickSort extends SortMethod{
     QuickSort(String sortName, long instanceSize) {
         super(sortName, instanceSize)
     }
-    /*def comp = 0
+    def comp = 0
     def mov = 0
-    se pueden definir como variables globales pero no entiendo
-     donde deberia contar 1 movimiento o una comparacion :v
-    */
+    //se pueden definir como variables globales pero no entiendo
+    // donde deberia contar 1 movimiento o una comparacion :v
+
     @Override
     int[] sortM(int[] items) {
         def list = []
