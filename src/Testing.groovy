@@ -1,11 +1,3 @@
-assertEquals("test", "test")
-
-/*
-def x = "42"
-assertNotNull "x must not be null", x
-assertNull null
-assertSame x, x
- */
 
 import java.util.Arrays;
 import java.util.Random;
@@ -22,7 +14,7 @@ class TestingSortMethod extends GroovyTestCase {
         testOne = []
         testTwo = [0]
 
-        size = 1000+1000*rand.nextDouble()
+        size = 1000
         items = new int[size]
 
         for (int i = 0;i<size;i++){
@@ -30,14 +22,14 @@ class TestingSortMethod extends GroovyTestCase {
         }
         testThree = items.clone()
 
-        size = 10000+10000*rand.nextDouble()
+        size = 10000
         items = new int[size]
 
         for (int i = 0;i<size;i++){
             items[i]=rand.nextInt(size+1)
         }
         testFour = items.clone()
-        size = 100000+100000*rand.nextDouble()
+        size = 150000
         items = new int[size]
 
         for (int i = 0;i<size;i++){
@@ -54,7 +46,7 @@ class TestingSortMethod extends GroovyTestCase {
 
 
     }
-    def testSRT(SortMethod sortMethod){
+    def testSRT(sortMethod){
         assertEquals "Must be equals", testOne.sort(false), sortMethod.sortM(testOne)
         assertEquals "Must be equals", testTwo.sort(false), sortMethod.sortM(testTwo)
         assertEquals "Must be equals", testThree.sort(false), sortMethod.sortM(testThree)
@@ -63,12 +55,12 @@ class TestingSortMethod extends GroovyTestCase {
     }
 
     def testAllSrtMeth(int[] array) {
-        def qs = new QuickSort()
-        def ms = new MergeSort()
-        def hp = new HeapSort()
-        def bs = new BubbleSort()
-        def msj = new MergeSortJava()
-        def qsj = new QuickSortJava()
+        def qs = new QuickSort("Quick sort",0)
+        def ms = new MergeSort("Merge sort",0)
+        def hp = new HeapSort("Heap sort",0)
+        def bs = new BubbleSort("Bubble sort",0)
+        def msj = new MergeSortJava("Merge sort",0)
+        def qsj = new QuickSortJava("Quick sort java",0)
         sortMeth = [qs,ms,hp,bs,msj,qsj]
         sortMeth.each {testSRT(it)}
     }
