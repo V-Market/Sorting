@@ -1,8 +1,17 @@
-
+import BubbleSort
+import HeapSort
+import MergeSortJava
+import MergeSort
+import QuickSort
+import QuickSortJava
 import java.util.Arrays;
 import java.util.Random;
+import junit.framework.Test
+import groovy.util.AllTestSuite
+
 
 class TestingSortMethod extends GroovyTestCase {
+
     def testOne
     def testTwo
     def testThree
@@ -50,11 +59,17 @@ class TestingSortMethod extends GroovyTestCase {
 
     }
     def testSRT(sortMethod){
-        assertEquals "Must be equals", testOne.sort(false), sortMethod.sortM(testOne)
-        assertEquals "Must be equals", testTwo.sort(false), sortMethod.sortM(testTwo)
-        assertEquals "Must be equals", testThree.sort(false), sortMethod.sortM(testThree)
-        assertEquals "Must be equals", testFour.sort(false), sortMethod.sortM(testFour)
-        assertEquals "Must be equals", testFive.sort(false), sortMethod.sortM(testFive)
+        def integ = []
+        integ = testOne
+        assert "Must be equals", integ.sort() as int[] == sortMethod.sortM(testOne)
+        integ = testTwo
+        assert "Must be equals", integ.sort() as int[] == sortMethod.sortM(testTwo)
+        integ = testThree
+        assert "Must be equals", integ.sort() as int[] == sortMethod.sortM(testThree)
+        integ = testFour
+        assert "Must be equals", integ.sort() as int[] == sortMethod.sortM(testFour)
+        integ = testFive
+        assert "Must be equals", integ.sort() as int[] == sortMethod.sortM(testFive)
     }
 
     def testAllSrtMeth() {
@@ -66,6 +81,11 @@ class TestingSortMethod extends GroovyTestCase {
         def qsj = new QuickSortJava("Quick sort java",0)
         def sortMeth = [qs,ms,hp,bs,msj,qsj]
         sortMeth.each {testSRT(it)}
+    }
+    //@Test
+    public static void testMethod(){
+        TestingSortMethod myTest= new TestingSortMethod()
+        myTest.testAllSrtMeth()
     }
 
 
