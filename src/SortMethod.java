@@ -13,6 +13,10 @@ abstract class SortMethod {
     //toString con el nombre del ordenamiento
     //mas su respectivo reporte
 
+    public String getSortNameAndReport(){
+        return sortName+"\t"+report.getReportString();
+    }
+
     @Override
     public String toString(){
         return  ("-------------------\n"

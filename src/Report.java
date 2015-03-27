@@ -27,9 +27,14 @@ class Report {
         this.time = time;
     }
 
+    public String getReportString(){
+        return comparisons+"\t"+movements+"\t"+time+"\n";
+    }
+
     //toString para la impresion del reporte
     @Override
     public String toString(){
+
         return ("Instance Size: " + instanceSize
         + "\nComparisons: " + comparisons
         + "\nMovements: "+ movements
