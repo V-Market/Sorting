@@ -33,6 +33,6 @@ class Report {
         return ("Instance Size: " + instanceSize
         + "\nComparisons: " + comparisons
         + "\nMovements: "+ movements
-        + "\nTime: "+time);
+        + "\nTime: "+time+ " ms");
     }
 }

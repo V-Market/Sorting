@@ -2,8 +2,14 @@
  * Created by Gabriel on 24/03/2015.
  */
 
+import com.explodingpixels.macwidgets.Test;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 class Runner {
 
@@ -34,36 +40,46 @@ class Runner {
         qsj = new QuickSortJava("Quick sort / java",instanceSize);
     }
 
-    public static void main(String[] args) {
-        int number = 10;
+    public static void main(String[] args) throws IOException {
+        FileWriter fw = new FileWriter("output.txt");
+        BufferedWriter bw = new BufferedWriter(fw);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("Ingrese la longitud del arrelgo a ordenar: ");
+        int number = sc.nextInt();
+        sc.close();
+
         int [] list;
         Runner runner = new Runner(number);
-        System.out.println( "ARREGLO INICIAL : ");
-        System.out.println(Arrays.toString(runner.items));
+        //System.out.println( "ARREGLO INICIAL : ");
+        //System.out.println(Arrays.toString(runner.items));
         //------------------------------/
         //BUBBLE SORT
         list = runner.bs.sortM(runner.items);
         System.out.println(runner.bs.toString());
-        System.out.println(Arrays.toString(list));
+        //System.out.println(Arrays.toString(list));
         //HEAPSORT
         list = runner.hs.sortM(runner.items);
         System.out.println(runner.hs.toString());
-        System.out.println(Arrays.toString(list));
+        //System.out.println(Arrays.toString(list));
         //QUICKSORT
         list = runner.qs.sortM(runner.items);
         System.out.println(runner.qs.toString());
-        System.out.println(Arrays.toString(list));
+        //System.out.println(Arrays.toString(list));
         //QUICKSORT JAVA
         list = runner.qsj.sortM(runner.items);
         System.out.println(runner.qsj.toString());
-        System.out.println(Arrays.toString(list));
+        //System.out.println(Arrays.toString(list));
         //MERGESORT
         list = runner.ms.sortM(runner.items);
         System.out.println(runner.ms.toString());
-        System.out.println(Arrays.toString(list));
+        //System.out.println(Arrays.toString(list));
         //MERGESORT JAVA
         list = runner.msj.sortM(runner.items);
         System.out.println(runner.msj.toString());
-        System.out.println(Arrays.toString(list));
+        //System.out.println(Arrays.toString(list));
+
+        //TestingSortMethod tsm = new TestingSortMethod();
+        //tsm.testAllSrtMeth();
     }
 }

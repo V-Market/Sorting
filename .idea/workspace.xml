@@ -29,8 +29,8 @@
       <file leaf-file-name="BubbleSort.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BubbleSort.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="714">
-              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="714">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
               <folding>
                 <element signature="e#34#78#0" expanded="false" />
               </folding>
@@ -41,8 +41,40 @@
       <file leaf-file-name="QuickSort.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QuickSort.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-              <caret line="22" column="19" selection-start-line="16" selection-start-column="8" selection-end-line="22" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="697">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSort.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MergeSort.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8320988" vertical-offset="462" max-vertical-offset="935">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeapSort.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HeapSort.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1666">
+              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSortJava.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MergeSortJava.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1241">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -51,40 +83,8 @@
       <file leaf-file-name="QuickSortJava.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QuickSortJava.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="1037">
-              <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeSort.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MergeSort.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="935">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeSortJava.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MergeSortJava.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1241">
-              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeapSort.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HeapSort.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91604936" vertical-offset="1227" max-vertical-offset="1700">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1054">
+              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -95,11 +95,21 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="717" max-vertical-offset="1224">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Testing.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Testing.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1292">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,14 +125,15 @@
         <option value="$PROJECT_DIR$/src/Runner.groovy" />
         <option value="$PROJECT_DIR$/src/Report.groovy" />
         <option value="$PROJECT_DIR$/src/SortMethod.java" />
-        <option value="$PROJECT_DIR$/src/QuickSortJava.java" />
-        <option value="$PROJECT_DIR$/src/Report.java" />
         <option value="$PROJECT_DIR$/src/BubbleSort.groovy" />
+        <option value="$PROJECT_DIR$/src/HeapSort.groovy" />
+        <option value="$PROJECT_DIR$/src/MergeSortJava.java" />
+        <option value="$PROJECT_DIR$/src/Report.java" />
+        <option value="$PROJECT_DIR$/src/QuickSortJava.java" />
         <option value="$PROJECT_DIR$/src/QuickSort.groovy" />
         <option value="$PROJECT_DIR$/src/MergeSort.groovy" />
+        <option value="$PROJECT_DIR$/src/Testing.groovy" />
         <option value="$PROJECT_DIR$/src/Runner.java" />
-        <option value="$PROJECT_DIR$/src/MergeSortJava.java" />
-        <option value="$PROJECT_DIR$/src/HeapSort.groovy" />
       </list>
     </option>
   </component>
@@ -177,6 +188,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Sorting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SortingAnalisis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sorting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Testing.groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -512,12 +541,12 @@
       <workItem from="1427322168383" duration="17577000" />
       <workItem from="1427377640594" duration="908000" />
       <workItem from="1427378588791" duration="883000" />
-      <workItem from="1427407727688" duration="4321000" />
+      <workItem from="1427407727688" duration="11726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37804000" />
+    <option name="totallyTimeSpent" value="45209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -910,19 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8740741" vertical-offset="156" max-vertical-offset="714">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-          <folding>
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SortMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
@@ -931,67 +947,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79012346" vertical-offset="173" max-vertical-offset="646">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BubbleSort.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="714">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="714">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
           <folding>
             <element signature="e#34#78#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuickSort.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="697">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="717" max-vertical-offset="1224">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MergeSort.groovy">
+    <entry file="file://$PROJECT_DIR$/src/Testing.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="935">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MergeSortJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1241">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1292">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QuickSortJava.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="1037">
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1054">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuickSort.groovy">
+    <entry file="file://$PROJECT_DIR$/src/MergeSortJava.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <caret line="22" column="19" selection-start-line="16" selection-start-column="8" selection-end-line="22" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1241">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HeapSort.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91604936" vertical-offset="1227" max-vertical-offset="1700">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1666">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeSort.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8320988" vertical-offset="462" max-vertical-offset="935">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

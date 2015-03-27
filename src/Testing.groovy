@@ -9,13 +9,17 @@ class TestingSortMethod extends GroovyTestCase {
     def testFour
     def testFive
 
+    public TestingSortMethod(){
+        inicialize();
+    }
+
     def inicialize(){
         Random rand = new Random()
         testOne = []
         testTwo = [0]
 
-        size = 1000
-        items = new int[size]
+        def size = 1000
+        def items = new int[size]
 
         for (int i = 0;i<size;i++){
             items[i]=rand.nextInt(size+1)
@@ -44,7 +48,6 @@ class TestingSortMethod extends GroovyTestCase {
         def msj = new MergeSortJava("Merge sort / java",size)
         def qsj = new QuickSortJava("Quick sort / java",size)
 
-
     }
     def testSRT(sortMethod){
         assertEquals "Must be equals", testOne.sort(false), sortMethod.sortM(testOne)
@@ -54,14 +57,14 @@ class TestingSortMethod extends GroovyTestCase {
         assertEquals "Must be equals", testFive.sort(false), sortMethod.sortM(testFive)
     }
 
-    def testAllSrtMeth(int[] array) {
+    def testAllSrtMeth() {
         def qs = new QuickSort("Quick sort",0)
         def ms = new MergeSort("Merge sort",0)
         def hp = new HeapSort("Heap sort",0)
         def bs = new BubbleSort("Bubble sort",0)
         def msj = new MergeSortJava("Merge sort",0)
         def qsj = new QuickSortJava("Quick sort java",0)
-        sortMeth = [qs,ms,hp,bs,msj,qsj]
+        def sortMeth = [qs,ms,hp,bs,msj,qsj]
         sortMeth.each {testSRT(it)}
     }
 
